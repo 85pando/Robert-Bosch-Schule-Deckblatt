@@ -1,0 +1,16 @@
+Das ganze Päckchen erzeugt eine Titlepage mit Schulangabe, Schullogo, Titel der Arbeit, Name des Autors und Schuljahr. Danach erzeugt es eine zweite Titlepage mit genaueren Angaben nach dem gegebenen Muster.
+
+Um das ganze zu verwenden muss das ganze in einen Unterordner "title" im selben Ordner wie das Dokumentfile liegen.
+
+Im Dokumentfile muss folgendes eingefügt werden:
+
+In den usepackages:
+	\usepackage{./title/title-settings}
+
+Direkt nach \begin{document}:
+	\input{./title/title-input.tex}
+	\input{./title/title.tex}
+
+Danach folgt sinnigerweise direkt das \tableofcontents.
+
+Alle Eingaben werden im title-input.tex geändert. Ausnahme sind hier die Bilder, die müssen leider direkt im title.tex geändert werden. Hier ist zu beachten, dass der Pfad zu den Bildern relativ zum Hauptdokument und nicht zum title.tex erfolgt. Dazu einfach die title.tex nach "company logo" und "title image" durchsuchen und die jeweils folgende Zeile korrigieren.

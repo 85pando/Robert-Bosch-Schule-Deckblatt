@@ -1,0 +1,104 @@
+\begin{titlepage}
+
+\pagestyle{empty}
+
+% erste spalte
+\begin{minipage}{0.5\textwidth}
+% linkszentriert
+\begin{flushleft} \large
+\textbf{\MySchuleA} \\
+\textbf{\MySchuleB} \\
+\textbf{\MyRichtung}
+\end{flushleft}
+\end{minipage}
+%
+% zweite spalte
+\begin{minipage}{0.5\textwidth}
+%rechtszentriert
+\begin{flushright}
+%image for the school
+\includegraphics[width=3cm]{./Bilder/rbs_logo.jpg}
+\end{flushright}
+\end{minipage}
+
+\vspace*{8cm} \ \\
+
+\begin{center}
+\textbf{{\LARGE \MyTitle}}
+\end{center}
+
+\vspace*{9cm} \ \\
+
+\begin{flushleft}
+\textbf{\MyAuthor}\\
+\textbf{Schuljahr \MySchuljahr}
+\end{flushleft}
+
+\cleardoublepage
+
+% 2-spaltig für schulnamen (links) und logos (rechts)
+%
+% erste spalte
+\begin{minipage}{0.5\textwidth}
+% linkszentriert
+\begin{flushleft} \large
+\textbf{\MySchuleA} \\
+\textbf{\MySchuleB} \\
+\textbf{\MyRichtung}
+\vspace*{3ex}\\
+\textbf{und}
+\vspace*{3ex} \\
+\textbf{\MyFirma}\\
+\textbf{\MyAbteilung}\\
+\textbf{\MyFirmenStrasse}\\
+\textbf{\MyFirmenOrt}
+\end{flushleft}
+\end{minipage}
+%
+% zweite spalte
+\begin{minipage}{0.5\textwidth}
+%rechtszentriert
+\begin{flushright}
+% image for the school
+\includegraphics[width=3cm]{./Bilder/rbs_logo.jpg}
+\vspace*{8ex} \\
+%replace this with the real company logo
+\includegraphics[width=3cm]{./Bilder/bosch_logo.jpg}
+\end{flushright}
+\end{minipage}
+
+\vspace*{2ex} \ \\
+
+\begin{center}
+{\LARGE \MyTitle}
+
+\vspace*{2ex} \ \\
+
+%replace this with your title image
+\includegraphics{./Bilder/MAS.jpg}
+\end{center}
+
+\vspace*{3ex} \ \\
+
+\begin{tabular}{lll}
+\textbf{vorgelegt von:} & \MyAuthor & \\
+\textbf{Klasse:} & \MyKlasse & \\
+\textbf{Kontaktaddresse:} & \MyKontaktaddresse & \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{} & & \\
+\textbf{Abgabedatum:} & \MyDatum& \\
+\textbf{im Schuljahr:} & \MySchuljahr& \\
+\textbf{} & & \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Betreuung:} & & \\
+\textbf{}Name: & \MyBetreuerA & \MyBetreuerB \\
+\textbf{}Titel: & \MyTitelA & \MyTitelB \\
+\textbf{}Kontaktdaten: & \MyEmailA & \MyEmailB\\
+\textbf{} & \MyTeleA & \MyTeleB \\
+\end{tabular}
+
+\cleardoublepage
+
+\pagestyle{plain} %reset pagestyle
+\setcounter{page}{1} %reset the page counter
+\end{titlepage}
